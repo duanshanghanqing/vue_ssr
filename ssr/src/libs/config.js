@@ -5,7 +5,7 @@ let STAGE_ENV = ''
 let _baseURL = ''
 // 服务端
 if (root.global) {
-    STAGE_ENV = process.env.STAGE_ENV || 'dev'
+    STAGE_ENV = root.process.env.STAGE_ENV
     console.log(STAGE_ENV)
     if (STAGE_ENV === 'dev') {
         _baseURL = 'http://www.bejson.com'
@@ -17,7 +17,7 @@ if (root.global) {
         _baseURL = 'http://www.bejson.com'
     }
 } else {
-    STAGE_ENV = window.STAGE_ENV || 'dev'
+    STAGE_ENV = window.STAGE_ENV
     console.log(STAGE_ENV)
     if (STAGE_ENV === 'dev') {
         _baseURL = '/api'

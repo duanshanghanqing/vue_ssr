@@ -1,0 +1,284 @@
+@defaultSize: 22;
+.font-size(@px) {
+    font-size: unit(@px/@defaultSize, rem);
+}
+
+.width(@px) {
+    width: unit(@px/@defaultSize, rem);
+}
+
+.min-width(@px) {
+    min-width: unit(@px/@defaultSize, rem);
+}
+
+.max-width(@px) {
+    max-width: unit(@px/@defaultSize, rem);
+}
+
+.height(@px) {
+    height: unit(@px/@defaultSize, rem);
+}
+
+.min-height(@px) {
+    min-height: unit(@px/@defaultSize, rem);
+}
+
+.max-height(@px) {
+    max-height: unit(@px/@defaultSize, rem);
+}
+
+.line-height(@px) {
+    line-height: unit(@px/@defaultSize, rem);
+}
+
+.margin(@px) {
+    margin: unit(@px/@defaultSize, rem);
+}
+
+.margin(@px1, @px2) {
+    margin: unit(@px1/@defaultSize, rem) unit(@px2/@defaultSize, rem);
+}
+
+.margin(@px1, @px2, @px3) {
+    margin: unit(@px1/@defaultSize, rem) unit(@px2/@defaultSize, rem) unit(@px3/@defaultSize, rem);
+}
+
+.margin(@px1, @px2, @px3, @px4) {
+    margin: unit(@px1/@defaultSize, rem) unit(@px2/@defaultSize, rem) unit(@px3/@defaultSize, rem) unit(@px4/@defaultSize, rem);
+}
+
+.margin-top(@px) {
+    margin-top: unit(@px/@defaultSize, rem);
+}
+
+.margin-right(@px) {
+    margin-right: unit(@px/@defaultSize, rem);
+}
+
+.margin-bottom(@px) {
+    margin-bottom: unit(@px/@defaultSize, rem);
+}
+
+.margin-left(@px) {
+    margin-left: unit(@px/@defaultSize, rem);
+}
+
+.padding(@px) {
+    padding: unit(@px/@defaultSize, rem);
+}
+
+.padding(@px1, @px2) {
+    padding: unit(@px1/@defaultSize, rem) unit(@px2/@defaultSize, rem);
+}
+
+.padding(@px1, @px2, @px3) {
+    padding: unit(@px1/@defaultSize, rem) unit(@px2/@defaultSize, rem) unit(@px3/@defaultSize, rem);
+}
+
+.padding(@px1, @px2, @px3, @px4) {
+    padding: unit(@px1/@defaultSize, rem) unit(@px2/@defaultSize, rem) unit(@px3/@defaultSize, rem) unit(@px4/@defaultSize, rem);
+}
+
+.padding-top(@px) {
+    padding-top: unit(@px/@defaultSize, rem);
+}
+
+.padding-right(@px) {
+    padding-right: unit(@px/@defaultSize, rem);
+}
+
+.padding-bottom(@px) {
+    padding-bottom: unit(@px/@defaultSize, rem);
+}
+
+.padding-left(@px) {
+    padding-left: unit(@px/@defaultSize, rem);
+}
+
+.top(@px) {
+    top: unit(@px/@defaultSize, rem);
+}
+
+.right(@px) {
+    right: unit(@px/@defaultSize, rem);
+}
+
+.bottom(@px) {
+    bottom: unit(@px/@defaultSize, rem);
+}
+
+.left(@px) {
+    left: unit(@px/@defaultSize, rem);
+}
+
+.border-top(@px, @type, @color) {
+    border-top: unit(@px/@defaultSize, rem) @type @color;
+}
+
+.border-right(@px, @type, @color) {
+    border-right: unit(@px/@defaultSize, rem) @type @color;
+}
+
+.border-bottom(@px, @type, @color) {
+    border-bottom: unit(@px/@defaultSize, rem) @type @color;
+}
+
+.border-left(@px, @type, @color) {
+    border-left: unit(@px/@defaultSize, rem) @type @color;
+}
+
+//圆角
+.border-radius(@px) {
+    border-radius: unit(@px/@defaultSize, rem);
+    -webkit-border-radius: unit(@px/@defaultSize, rem);
+    -moz-border-radius: unit(@px/@defaultSize, rem);
+    -ms-border-radius: unit(@px/@defaultSize, rem);
+    -o-border-radius: unit(@px/@defaultSize, rem);
+}
+
+.border-radius-left-top(@px) {
+    border-radius: unit(@px/@defaultSize, rem) 0px 0px 0px;
+    -webkit-border-radius: unit(@px/@defaultSize, rem) 0px 0px 0px;
+    -moz-border-radius: unit(@px/@defaultSize, rem) 0px 0px 0px;
+    -ms-border-radius: unit(@px/@defaultSize, rem) 0px 0px 0px;
+    -o-border-radius: unit(@px/@defaultSize, rem) 0px 0px 0px;
+}
+
+.border-radius-right-top(@px) {
+    border-radius: 0px unit(@px/@defaultSize, rem) 0px 0px;
+    -webkit-border-radius: 0px unit(@px/@defaultSize, rem) 0px 0px;
+    -moz-border-radius: 0px unit(@px/@defaultSize, rem) 0px 0px;
+    -ms-border-radius: 0px unit(@px/@defaultSize, rem) 0px 0px;
+    -o-border-radius: 0px unit(@px/@defaultSize, rem) 0px 0px;
+}
+
+.border-radius-left-bottom(@px) {
+    border-radius: 0px 0px unit(@px/@defaultSize, rem);
+    -webkit-border-radius: 0px 0px unit(@px/@defaultSize, rem);
+    -moz-border-radius: 0px 0px unit(@px/@defaultSize, rem);
+    -ms-border-radius: 0px 0px unit(@px/@defaultSize, rem);
+    -o-border-radius: 0px 0px unit(@px/@defaultSize, rem);
+}
+
+.border-radius-right-bottom(@px) {
+    border-radius: 0px 0px unit(@px/@defaultSize, rem) 0px;
+    -webkit-border-radius: 0px 0px unit(@px/@defaultSize, rem) 0px;
+    -moz-border-radius: 0px 0px unit(@px/@defaultSize, rem) 0px;
+    -ms-border-radius: 0px 0px unit(@px/@defaultSize, rem) 0px;
+    -o-border-radius: 0px 0px unit(@px/@defaultSize, rem) 0px;
+}
+
+//2D 转换
+//旋转
+.transform-rotate(@deg) {
+    transform: rotate(@deg);
+    -ms-transform: rotate(@deg);
+    -webkit-transform: rotate(@deg);
+    -o-transform: rotate(@deg);
+    -moz-transform: rotate(@deg);
+}
+
+//从其当前位置移动
+.transform-translate(@px) {
+    transform: translate(@px);
+    -ms-transform: translate(@px);
+    -webkit-transform: translate(@px);
+    -o-transform: translate(@px);
+    -moz-transform: translate(@px);
+}
+
+.transform-translate(@px1, @px2) {
+    transform: translate(@px1, @px2);
+    -ms-transform: translate(@px1, @px2);
+    -webkit-transform: translate(@px1, @px2);
+    -o-transform: translate(@px1, @px2);
+    -moz-transform: translate(@px1, @px2);
+}
+
+//缩放，元素的尺寸会增加或减少
+.transform-scale(@number) {
+    transform: scale(@number);
+    -ms-transform: scale(@number);
+    -webkit-transform: scale(@number);
+    -o-transform: scale(@number);
+    -moz-transform: scale(@number);
+}
+
+.transform-scale(@number1, @number2) {
+    transform: scale(@number1, @number2);
+    -ms-transform: scale(@number1, @number2);
+    -webkit-transform: scale(@number1, @number2);
+    -o-transform: scale(@number1, @number2);
+    -moz-transform: scale(@number1, @number2);
+}
+
+//元素翻转给定的角度
+.transform-skew(@px) {
+    transform: skew(@px);
+    -ms-transform: skew(@px);
+    -webkit-transform: skew(@px);
+    -o-transform: skew(@px);
+    -moz-transform: skew(@px);
+}
+
+.transform-skew(@px1, @px2) {
+    transform: skew(@px1, @px2);
+    -ms-transform: skew(@px1, @px2);
+    -webkit-transform: skew(@px1, @px2);
+    -o-transform: skew(@px1, @px2);
+    -moz-transform: skew(@px1, @px2);
+}
+
+//矩阵
+.transform-matrix(@number1, @number2, @number3, @number4, @number5, @number6) {
+    transform: matrix(@number1, @number2, @number3, @number4, @number5, @number6);
+    -ms-transform: matrix(@number1, @number2, @number3, @number4, @number5, @number6);
+    -moz-transform: matrix(@number1, @number2, @number3, @number4, @number5, @number6);
+    -webkit-transform: matrix(@number1, @number2, @number3, @number4, @number5, @number6);
+    -o-transform: matrix(@number1, @number2, @number3, @number4, @number5, @number6);
+}
+
+//flex
+.flex() {
+    display: flex;
+}
+
+//placeholder颜色
+.placeholderColor(@color) {
+    input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder {
+        color: @color;
+    }
+    input:-moz-placeholder,
+    textarea:-moz-placeholder {
+        color: @color;
+    }
+    input::-moz-placeholder,
+    textarea::-moz-placeholder {
+        color: @color;
+    }
+    input:-ms-input-placeholder,
+    textarea:-ms-input-placeholder {
+        color: @color;
+    }
+}
+
+//设置背景渐变
+.background-gradient(@startColor: #FFFFFF, @endColor: #FFFFFF, @startPercent: 0%, @endPercent: 100%) {
+    background-image: -webkit-gradient(linear, left @startPercent, left @endPercent, from(@startColor), to(@endColor)); // Safari 4+, Chrome 2+
+    background-image: -webkit-linear-gradient(top, @startColor, @startPercent, @endColor, @endPercent); // Safari 5.1+, Chrome 10+
+    background-image: -moz-linear-gradient(top, @startColor @startPercent, @endColor @endPercent); // FF 3.6+
+    background-image: linear-gradient(to bottom, @startColor @startPercent, @endColor @endPercent); // Standard, IE10
+    background-repeat: repeat-x;
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)", argb(@startColor), argb(@endColor))); // for lt IE10
+}
+
+//设置背景透明
+.background-rgba(@color: rgba(0, 0, 0, .35)) {
+    background: @color;
+    filter: e(%("progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='%d', EndColorStr='%d')", argb(@color), argb(@color)));
+    &:nth-of-type(1n) {
+        // for gt IE8, 阻止背景叠加
+        filter: none\9;
+    }
+}

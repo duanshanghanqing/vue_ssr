@@ -1,0 +1,218 @@
+html {
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 401px) {
+    html {
+        font-size: 25px !important;
+    }
+}
+
+@media only screen and (min-width: 428px) {
+    html {
+        font-size: 26.75px !important;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    html {
+        font-size: 30px !important;
+    }
+}
+
+@media only screen and (min-width: 569px) {
+    html {
+        font-size: 35px !important;
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    html {
+        font-size: 40px !important;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    outline: none;
+    &:link {
+        text-decoration: none;
+    }
+    &:visited {
+        text-decoration: none;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+    &:active {
+        text-decoration: none;
+    }
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+p {
+    font-size: 16px;
+}
+
+dl {
+    margin-bottom: 0;
+    dt {
+        font-weight: 400;
+    }
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+body {
+    position: relative;
+    font-size: 14px;
+    font-family: -apple-system, 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+input,
+textarea {
+    border: 0;
+    -webkit-appearance: none;
+}
+em {
+    font-style: normal;
+}
+hr {
+    border: none;
+    height: 1px;
+    background: #ddd;
+}
+// 常用主色
+@blue: #008cee !important;
+@blue-light: #3bc2b5 !important;
+@red: #D0021b !important;
+.text-red {
+    color: @red;
+}
+.text-blue {
+    color: @blue;
+}
+.text-blue-light {
+    color: @blue-light;
+}
+.widthFull {
+    width: 100% !important;
+}
+
+.heightFull {
+    height: 100% !important;
+}
+/*
+//视图切换动画
+//进入动画
+.animation-enter,
+.animation-leave-active {
+    opacity: 0;
+    -webkit-transform: translate(30px, 0);
+    transform: translate(30px, 0);
+}
+//离开动画
+.animation-leave-active,
+.animation-enter {
+    opacity: 0;
+    -webkit-transform: translate(-30px, 0);
+    transform: translate(-30px, 0);
+}
+*/
+
+/* 公共样式 */
+
+//清除浮动类
+.clearfix {
+    &:after {
+        clear: both;
+        content: " ";
+        display: block;
+        font-size: 0;
+        height: 0;
+        visibility: hidden;
+    }
+    *zoom: 1; // fix for IE6/7
+}
+
+//块级化并居中类
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//显示方式类
+.inline-block {
+    display: inline-block;
+    *display: inline; //margin-right : -3px ; 元素之间显示间隙，同时没有删除空格的时候就这样写
+    *zoom: 1;
+}
+
+//清除浮动类
+.clearfix {
+    &:after {
+        clear: both;
+        content: " ";
+        display: block;
+        font-size: 0;
+        height: 0;
+        visibility: hidden;
+    }
+    *zoom: 1; // fix for IE6/7
+}
+// 强制浮动
+.pull-left {
+    float: left !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.fit-height {
+    overflow: auto;
+    zoom: 1;
+}
+// 隐藏强制
+.hidden {
+    display: none!important;
+}
+//文本溢出省略号
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// 通用 svg 图标
+.iconSVG {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}

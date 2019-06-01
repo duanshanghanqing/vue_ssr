@@ -1,0 +1,23 @@
+//空白间距
+.blank-margin(@num: 10px) {
+    .padding(0px, @num, 0px, @num);
+}
+
+.navView {
+    position: fixed;
+    top: 0;
+    right: 0;
+    .bottom(50px);
+    left: 0;
+    z-index: 999;
+}
+
+.line-clamp(@line) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: @line;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    word-break: break-all;
+}
